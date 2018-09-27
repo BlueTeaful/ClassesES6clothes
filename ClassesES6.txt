@@ -1,0 +1,20 @@
+var Clothes = class {
+  constructor(name, size, price){
+    this.name = name;
+    this.size = size;
+    this.price = price;
+  }
+
+  NewClothes() { 
+return `${this.name} ${this.size} ${this.price}`; 
+}
+ }
+
+ class Shirt extends Clothes {
+  constructor() {
+   super ("long sleeve shirt", "small", "$100");
+   }
+}
+
+var a = new Shirt ();
+console.log(a.NewClothes());
